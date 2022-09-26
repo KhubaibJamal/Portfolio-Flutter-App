@@ -1,8 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:flutter/services.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'package:portfolio/contact.dart';
-import 'package:portfolio/skill.dart';
+import 'package:portfolio/Pages/contact.dart';
+import 'package:portfolio/Pages/skill.dart';
 
 class HomePage extends StatefulWidget {
   const HomePage({Key? key}) : super(key: key);
