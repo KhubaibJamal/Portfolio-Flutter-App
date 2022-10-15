@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 
+import '../Widget/skills_widget.dart';
+
 class SkillPage extends StatelessWidget {
   const SkillPage({Key? key}) : super(key: key);
 
@@ -22,49 +24,31 @@ class SkillPage extends StatelessWidget {
         children: [
           Row(
             children: [
-              decorationBox("Flutter"),
-              decorationBox("Dart"),
-              decorationBox("Firebase"),
+              SkillsWidget(text: "Flutter"),
+              SkillsWidget(text: "Dart"),
+              SkillsWidget(text: "Firebase"),
             ],
           ),
           Row(
             children: [
-              decorationBox("REST API"),
-              decorationBox("Node js"),
-              decorationBox("C++"),
+              SkillsWidget(text: "REST API"),
+              SkillsWidget(text: "Node js"),
+              SkillsWidget(text: "C++"),
             ],
           ),
           Row(
             children: [
-              decorationBox("JavaScript"),
-              decorationBox("Java"),
-              decorationBox("Android"),
+              SkillsWidget(text: "JavaScript"),
+              SkillsWidget(text: "Java"),
+              SkillsWidget(text: "Android"),
             ],
           ),
           Row(
             children: [
-              decorationBox("Git"),
+              SkillsWidget(text: "Git"),
             ],
           ),
         ],
-      ),
-    );
-  }
-
-  Widget decorationBox(String text) {
-    return Container(
-      margin: const EdgeInsets.only(top: 30.0, left: 13.0),
-      padding: const EdgeInsets.all(10.0),
-      decoration: BoxDecoration(
-          color: const Color(0xFF363636),
-          borderRadius: BorderRadius.circular(10.0)),
-      child: Text(
-        text,
-        style: GoogleFonts.lato(
-          fontSize: 25,
-          fontWeight: FontWeight.w800,
-          color: const Color(0XFFBCB4B4),
-        ),
       ),
     );
   }
