@@ -20,20 +20,23 @@ class ContactPage extends StatelessWidget {
               color: const Color(0XFFBCB4B4)),
         ),
       ),
-      body: SafeArea(
-        child: Column(
-          children: [
-            ContactCardWidget(
-                image: 'assets/phone.png', cardTitle: "+92 333-2986103"),
-            ContactCardWidget(
-                image: 'assets/email.png', cardTitle: "khubaib.j18@gmail.com"),
-            ContactCardWidget(
-                image: 'assets/github.png', cardTitle: "KhubaibJamal"),
-            ContactCardWidget(
-                image: 'assets/LinkedIn.png', cardTitle: "khubaib-jamal"),
-            ContactCardWidget(
-                image: 'assets/location.png', cardTitle: "Karachi, Pakistan"),
-          ],
+      body: SingleChildScrollView(
+        child: SafeArea(
+          child: Column(
+            children: [
+              ContactCardWidget(
+                  image: 'assets/phone.png', cardTitle: "+92 333-2986103"),
+              ContactCardWidget(
+                  image: 'assets/email.png',
+                  cardTitle: "khubaib.j18@gmail.com"),
+              ContactCardWidget(
+                  image: 'assets/github.png', cardTitle: "KhubaibJamal"),
+              ContactCardWidget(
+                  image: 'assets/LinkedIn.png', cardTitle: "khubaib-jamal"),
+              ContactCardWidget(
+                  image: 'assets/location.png', cardTitle: "Karachi, Pakistan"),
+            ],
+          ),
         ),
       ),
     );
