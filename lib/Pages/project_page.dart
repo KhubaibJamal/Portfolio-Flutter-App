@@ -34,6 +34,17 @@ class _ProjectPageState extends State<ProjectPage> {
               image: 'assets/Note.png',
             ),
             ProjectCardWidget(
+              projectTitle: "Google Maps",
+              projectDescription:
+                  "Google map integration using API. Show live location ",
+              image: 'assets/google map.png',
+            ),
+            ProjectCardWidget(
+              projectTitle: "QR reader",
+              projectDescription: "Barcode reader and generator",
+              image: 'assets/QR_scanner.png',
+            ),
+            ProjectCardWidget(
               projectTitle: "Login SignUp page",
               projectDescription:
                   "A simple Ui for login & sign-up page with email and password also google-sign-in",
