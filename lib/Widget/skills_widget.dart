@@ -9,8 +9,9 @@ class SkillsWidget extends StatelessWidget {
       margin: const EdgeInsets.only(top: 30.0, left: 13.0),
       padding: const EdgeInsets.all(10.0),
       decoration: BoxDecoration(
-          color: const Color(0xFF363636),
-          borderRadius: BorderRadius.circular(10.0)),
+        color: const Color(0xFF363636),
+        borderRadius: BorderRadius.circular(10.0),
+      ),
       child: Text(
         text,
         style: GoogleFonts.lato(
